@@ -5,9 +5,8 @@
 </template>
 
 <script setup>
-import initOpenCascade from 'opencascade.js';
 
-const oc = await initOpenCascade();
-console.log(oc);
+import * as wM from 'opencascade.js/dist/opencascade.full';
+var pt = new wM.gp_Pnt_3(10,0,0);
 
 </script>
